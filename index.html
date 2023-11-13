@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="shortcut icon" href="images/clock-icon.png" type="image/png">
+<body onselectstart="return false">
+    <main>
+        <header>
+            <h1>CRONÔMETRO</h1>
+        </header>
+        <section class="container">
+            <div class="containerClock">
+                <div class="clock">
+                    <div class="circle circle1" id="sc"><i></i></div>
+                    <div class="circle circle2" id="mn"><i></i></div>
+                    <div class="circle circle3" id="hr"><i></i></div>
+                    <span style="--n:1"><b>1</b></span>
+                    <span style="--n:2"><b>2</b></span>
+                    <span style="--n:3"><b>3</b></span>
+                    <span style="--n:4"><b>4</b></span>
+                    <span style="--n:5"><b>5</b></span>
+                    <span style="--n:6"><b>6</b></span>
+                    <span style="--n:7"><b>7</b></span>
+                    <span style="--n:8"><b>8</b></span>
+                    <span style="--n:9"><b>9</b></span>
+                    <span style="--n:10"><b>10</b></span>
+                    <span style="--n:11"><b>11</b></span>
+                    <span style="--n:12"><b>12</b></span>
+                </div>
+            </div>
+            <h1 id="cont">00:00:00</h1>
+            <div class="container-btn">
+                <button id="start" class="btn-style">COMEÇAR</button>
+                <button id="stop" class="btn-style">PARAR</button>
+                <button id="reset" class="btn-style" style="margin-top: 7px">RECOMEÇAR</button>
+            </div>
+        </section>
+        <footer>
+            <p>developed by &lt<a href="https://github.com/hiagoemanuel" target="_blank">hiagoemanuel</a>&gt</p>
+        </footer>
+    </main>
+    <script src="assents/script.js"></script>
+    <script src="assents/inferface.js"></script>
+</body>
+</html>

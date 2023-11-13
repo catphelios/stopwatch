@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap');
+
+:root {    
+--pointerWeight: 2.3px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    cursor: default;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/background-water.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;
+}
+header h1 {
+    font-weight: 100;
+    font-size: 45pt;
+}
+.container {
+    max-width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.containerClock {
+    position: relative;
+    min-height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock span {
+    position: absolute;
+    inset: 0px;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--n)));
+}
+.clock span b {
+    font-weight: 400;
+    font-size: 1.2em;
+    display: inline-block;
+    transform: rotate(calc(-30deg * var(--n)));
+}
+.circle {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    /* border: 2px solid #ffffff;
+    border-radius: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 10;
+}
+.circle i {
+    position: absolute;
+    width: var(--pointerWeight);
+    height: 100%;
+    background: #ffffff;
+    transform-origin: top;
+    transform: scaleY(0.5);
+}
+.circle:nth-child(1) i {
+    width: var(--pointerWeight);
+}
+.circle:nth-child(2) i {
+    width: var(--pointerWeight);
+}
+.circle2 {
+    width: 140px;
+    height: 140px;
+    z-index: 9;
+}
+.circle3 {
+    width: 90px;
+    height: 90px;
+    z-index: 8;
+}
+.container h1 {
+    font-weight: 400;
+    padding: 15px 0px;
+}
+.container-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.btn-style {
+    margin: 5px 0px;
+    background: transparent;
+    outline: none;
+    border: 1.6px solid white;
+    border-radius: 30px;
+    padding: 10px;
+}
+footer p {
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+footer p a {
+    text-decoration: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 460px) {
+    header h1 {
+        width: 100%;
+        text-align: center;
+        font-weight: 100;
+        font-size: 30pt;
+    }
+}
